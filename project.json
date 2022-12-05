@@ -1,0 +1,141 @@
+{
+  "projectType": "application",
+  "sourceRoot": "packages/sc-front-site/src",
+  "prefix": "sol",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/modules/solenopsys",
+        "index": "packages/sc-front-site/src/index.html",
+        "main": "packages/sc-front-site/src/main.browser.ts",
+        "polyfills": "packages/sc-front-site/src/polyfills.ts",
+        "tsConfig": "packages/sc-front-site/tsconfig.app.json",
+        "assets": [
+          "packages/sc-front-site/src/assets",
+          {
+            "input": "packages/fui/templates/src/assets",
+            "glob": "**/*",
+            "output": "assets"
+          },
+          "packages/sc-front-site/src/favicon.ico"
+        ],
+        "styles": ["packages/sc-front-site/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "packages/sc-front-site/src/environments/environment.ts",
+              "with": "packages/sc-front-site/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "solenopsys:build:production"
+        },
+        "development": {
+          "browserTarget": "solenopsys:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "server": {
+      "executor": "@angular-devkit/build-angular:server",
+      "options": {
+        "outputPath": "dist-server",
+        "main": "packages/sc-front-site/src/main.server.ts",
+        "tsConfig": "packages/sc-front-site/tsconfig.server.json"
+      },
+      "configurations": {
+        "dev": {
+          "fileReplacements": [
+            {
+              "replace": "packages/sc-front-site/src/environments/environment.ts",
+              "with": "packages/sc-front-site/src/environments/server/environment.ts"
+            }
+          ],
+          "optimization": true
+        },
+        "production": {
+          "outputHashing": "none",
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true,
+          "fileReplacements": [
+            {
+              "replace": "packages/sc-front-site/src/environments/environment.ts",
+              "with": "packages/sc-front-site/src/environments/server/environment.prod.ts"
+            }
+          ]
+        }
+      }
+    },
+    "prerender": {
+      "executor": "@nguniversal/builders:prerender",
+      "options": {
+        "browserTarget": "solenopsys:build:production",
+        "serverTarget": "solenopsys:server:production",
+        "routesFile": "packages/sc-front-site/prerender-routes.txt"
+      },
+      "configurations": {
+        "production": {}
+      }
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "solenopsys:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "packages/sc-front-site/src/**/*.ts",
+          "packages/sc-front-site/src/**/*.html"
+        ]
+      },
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/packages/sc-front-site"],
+      "options": {
+        "jestConfig": "packages/sc-front-site/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

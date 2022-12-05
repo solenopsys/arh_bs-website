@@ -1,0 +1,12 @@
+<div style="height: border-box; ">
+  <div style="display: flex;justify-content: center;" class="topPanel">
+    <div style="display: flex;max-width: 2200px; width: 1800px">
+      <div [ngClass]="mobileMenu?'main_menu_mobile':'main_menu'" class="main_menu_wrapper" (click)="mobileMenu=false">
+        <fui-smenu [data]="menu" [forModule]="false"></fui-smenu>
+      </div>
+      <div class="main_content">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc",
+    "types": [],
+    "target": "ES2017",
+    "lib": [
+      "es2020",
+      "es2015",
+      "es6",
+      "dom"
+    ]
+  },
+  "files": ["src/main.browser.ts", "src/polyfills.ts"],
+  "include": ["src/**/*.d.ts"],
+  "exclude": ["**/*.test.ts", "**/*.spec.ts"]
+}
