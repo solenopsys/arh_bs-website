@@ -7,5 +7,5 @@ service:
 
 container:
   name: nginx
-  image: registry.alexstorm.solenopsys.org/sc-fm-site
+  image: registry.alexstorm.solenopsys.org/sc-front-site
   pullPolicy: Always
