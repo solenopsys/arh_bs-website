@@ -1,6 +1,6 @@
 ARCHS="linux/amd64,linux/arm64"
-REG_ADDRESS="registry.alexstorm.solenopsys.org"
-ITEM="alexstorm-solenopsys-site"
+REG_ADDRESS="registry.richteri.solenopsys.org"
+ITEM="richteri-solenopsys-site"
 
 build_image(){
   echo "DOCKER BUILD"

@@ -2,7 +2,7 @@ apiVersion: v2
 name: solenopsys-site
 version: 0.1.7
 description: Solenopsys site
-icon: "http://alexstorm.solenopsys.org/modules/assets/solenopsys-site.svg"
+icon: "http://richteri.solenopsys.org/modules/assets/solenopsys-site.svg"
 
 
 

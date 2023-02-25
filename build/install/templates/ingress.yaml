@@ -13,7 +13,7 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: alexstorm-public-api
+                name: richteri-public-api
                 port:
                   number: 80
           - path: /
