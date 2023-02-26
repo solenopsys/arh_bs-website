@@ -9,7 +9,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { FuiEditorModule } from "@solenopsys/ui-editor-content";
 import { FuiNavigateModule } from "@solenopsys/ui-layouts";
 import { TextGroupByPatchResolver, TextPageGroupComponent } from "@solenopsys/ui-publications";
-import { createNgxs } from "@solenopsys/lib-storage";
+import { createNgxs } from "@solenopsys/fl-storage";
 import { environment } from "../environments/environment";
 import { MainPageComponent } from "./main-page/main-page.component";
 import { RoadMapComponent } from "./road-map/road-map.component";
