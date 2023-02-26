@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from "@angular/core";
-import { MenuItemData } from "@solenopsys/uimatrix-layouts";
-import { GroupService } from "@solenopsys/uimatrix-publications";
+import { MenuItemData } from "@solenopsys/ui-layouts";
+import { GroupService } from "@solenopsys/ui-publications";
 import { ActivatedRoute } from "@angular/router";
 import { firstValueFrom, map } from "rxjs";
 

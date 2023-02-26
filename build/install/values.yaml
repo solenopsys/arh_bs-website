@@ -7,5 +7,5 @@ service:
 
 container:
   name: nginx
-  image: registry.richteri.solenopsys.org/sc-front-site
+  image: registry.richteri.solenopsys.org/sc-fr-website
   pullPolicy: Always

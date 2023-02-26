@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from "@angular/core";
-import { MenuItemData } from "@solenopsys/uimatrix-layouts";
+import { MenuItemData } from "@solenopsys/ui-layouts";
 
 @Component({
   selector: "sol-top-panel",

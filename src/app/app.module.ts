@@ -6,9 +6,9 @@ import { RouterModule } from "@angular/router";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
-import { FuiEditorModule } from "@solenopsys/uimatrix-editor-content";
-import { FuiNavigateModule } from "@solenopsys/uimatrix-layouts";
-import { TextGroupByPatchResolver, TextPageGroupComponent } from "@solenopsys/uimatrix-publications";
+import { FuiEditorModule } from "@solenopsys/ui-editor-content";
+import { FuiNavigateModule } from "@solenopsys/ui-layouts";
+import { TextGroupByPatchResolver, TextPageGroupComponent } from "@solenopsys/ui-publications";
 import { createNgxs } from "@solenopsys/lib-storage";
 import { environment } from "../environments/environment";
 import { MainPageComponent } from "./main-page/main-page.component";
@@ -19,7 +19,7 @@ import { DoListComponent } from "./do-list/do-list.component";
 import { View3DComponent } from "./view3-d/view3-d.component";
 import { LoginComponent } from "./login/login.component";
 import { BaseLayoutComponent } from "./base-layout/base-layout.component";
-import { FuiFormsModule } from "@solenopsys/uimatrix-forms";
+import { FuiFormsModule } from "@solenopsys/ui-forms";
 
 function createRoute(section: string, sectionId: string) {
   return {
