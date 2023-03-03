@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from "@angular/core";
 
 @Component({
-  selector: "sol-do-list",
+  selector: "cs-do-list",
   templateUrl: "./do-list.component.html",
   styleUrls: ["./do-list.component.css"],
   encapsulation: ViewEncapsulation.Emulated

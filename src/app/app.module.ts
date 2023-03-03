@@ -6,8 +6,6 @@ import { RouterModule } from "@angular/router";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
-import { FuiEditorModule } from "@solenopsys/ui-editor-content";
-import { FuiNavigateModule } from "@solenopsys/ui-layouts";
 import { TextGroupByPatchResolver, TextPageGroupComponent } from "@solenopsys/ui-publications";
 import { createNgxs } from "@solenopsys/fl-storage";
 import { environment } from "../environments/environment";
@@ -17,9 +15,8 @@ import { TopPanelComponent } from "./top-panel/top-panel.component";
 import { LeftMenuLayoutComponent } from "./left-menu-layout/left-menu-layout.component";
 import { DoListComponent } from "./do-list/do-list.component";
 import { View3DComponent } from "./view3-d/view3-d.component";
-import { LoginComponent } from "./login/login.component";
 import { BaseLayoutComponent } from "./base-layout/base-layout.component";
-import { FuiFormsModule } from "@solenopsys/ui-forms";
+
 
 function createRoute(section: string, sectionId: string) {
   return {
@@ -45,7 +42,6 @@ function createRoute(section: string, sectionId: string) {
     LeftMenuLayoutComponent,
     DoListComponent,
     View3DComponent,
-    LoginComponent,
     BaseLayoutComponent
   ],
   imports: [
@@ -64,15 +60,12 @@ function createRoute(section: string, sectionId: string) {
         }, createRoute("docs", "0x55735"),
           createRoute("community", "0x4a04c"),
           createRoute("ecosystem", "0x5574a")]
-      }, {
-        path: "login",
-        component: LoginComponent
-      }
+      },
     ], { initialNavigation: "enabledBlocking" }),
-    FuiEditorModule,
-    FuiNavigateModule,
+
+    UiNavigateModule,
     ...createNgxs(!environment.production, [], true),
-    FuiFormsModule
+    UiFormsModule
   ],
   providers: [{ provide: "assets_dir", useValue: "" }],
   bootstrap: [AppComponent]
