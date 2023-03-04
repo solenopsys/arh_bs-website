@@ -9,7 +9,7 @@
       "executor": "@angular-devkit/build-angular:browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/packages/fr-website",
+        "outputPath": "dist/fronts/fr-website",
         "index": "packages/fronts/fr-website/src/index.html",
         "main": "packages/fronts/fr-website/src/main.ts",
         "polyfills": "packages/fronts/fr-website/src/polyfills.ts",
