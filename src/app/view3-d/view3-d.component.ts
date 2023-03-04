@@ -11,7 +11,7 @@ function animate() {
 
 
 @Component({
-  selector: "sol-view3-d",
+  selector: "sc-view3-d",
   templateUrl: "./view3-d.component.html",
   styleUrls: ["./view3-d.component.css"],
   encapsulation: ViewEncapsulation.Emulated

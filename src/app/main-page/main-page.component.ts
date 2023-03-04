@@ -1,13 +1,11 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'sol-main-page',
+  selector: 'sc-main-page',
   templateUrl: './main-page.component.html',
   styleUrls: ['./main-page.component.css'],
   encapsulation: ViewEncapsulation.Emulated,
 })
-export class MainPageComponent implements OnInit {
-  constructor() {}
+export class MainPageComponent  {
 
-  ngOnInit(): void {}
 }

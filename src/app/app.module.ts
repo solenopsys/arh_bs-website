@@ -16,6 +16,8 @@ import { LeftMenuLayoutComponent } from "./left-menu-layout/left-menu-layout.com
 import { DoListComponent } from "./do-list/do-list.component";
 import { View3DComponent } from "./view3-d/view3-d.component";
 import { BaseLayoutComponent } from "./base-layout/base-layout.component";
+import {UINavigateModule} from "@solenopsys/ui-navigate";
+import {UIFormsModule} from "@solenopsys/ui-forms";
 
 
 function createRoute(section: string, sectionId: string) {
@@ -63,9 +65,9 @@ function createRoute(section: string, sectionId: string) {
       },
     ], { initialNavigation: "enabledBlocking" }),
 
-    UiNavigateModule,
+    UINavigateModule,
     ...createNgxs(!environment.production, [], true),
-    UiFormsModule
+    UIFormsModule
   ],
   providers: [{ provide: "assets_dir", useValue: "" }],
   bootstrap: [AppComponent]

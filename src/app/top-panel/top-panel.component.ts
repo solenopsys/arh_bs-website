@@ -1,13 +1,14 @@
 import { Component, OnInit, ViewEncapsulation } from "@angular/core";
-import { MenuItemData } from "@solenopsys/ui-layouts";
+import {MenuItemData} from "@solenopsys/ui-navigate";
+
 
 @Component({
-  selector: "sol-top-panel",
+  selector: "sc-top-panel",
   templateUrl: "./top-panel.component.html",
   styleUrls: ["./top-panel.component.css"],
   encapsulation: ViewEncapsulation.Emulated
 })
-export class TopPanelComponent implements OnInit {
+export class TopPanelComponent  {
   menu: MenuItemData[] = [{
     name: "Документация", link: "docs"
   },
@@ -19,9 +20,5 @@ export class TopPanelComponent implements OnInit {
 
   ];
 
-  constructor() {
-  }
 
-  ngOnInit(): void {
-  }
 }

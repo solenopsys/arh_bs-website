@@ -1,11 +1,12 @@
 import { Component, OnInit, ViewEncapsulation } from "@angular/core";
-import { MenuItemData } from "@solenopsys/ui-layouts";
+
 import { GroupService } from "@solenopsys/ui-publications";
 import { ActivatedRoute } from "@angular/router";
 import { firstValueFrom, map } from "rxjs";
+import {MenuItemData} from "@solenopsys/ui-navigate";
 
 @Component({
-  selector: "sol-left-menu-layout",
+  selector: "sc-left-menu-layout",
   templateUrl: "./left-menu-layout.component.html",
   styleUrls: ["./left-menu-layout.component.css"],
   encapsulation: ViewEncapsulation.Emulated

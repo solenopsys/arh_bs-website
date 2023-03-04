@@ -3,7 +3,7 @@ import { Component, OnInit, ViewEncapsulation } from "@angular/core";
 const STAGES_COUNT = 24;
 
 @Component({
-  selector: "sol-road-map",
+  selector: "sc-road-map",
   templateUrl: "./road-map.component.html",
   styleUrls: ["./road-map.component.css"],
   encapsulation: ViewEncapsulation.Emulated
