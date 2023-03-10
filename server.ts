@@ -3,7 +3,6 @@ import 'zone.js/dist/zone-node';
 
 
 import { createProxyMiddleware, Filter, Options, RequestHandler } from 'http-proxy-middleware';
-import {ngExpressEngine} from "@nguniversal/express-engine";
 import {AppServerModule} from "./src/app/app.server.module";
 const app = express();
 console.log("START")
@@ -19,12 +18,6 @@ app.use("/*/*", express.static('dist/modules/hub/'));
 
 const port = process.env.PORT || 4001;
 
-app.engine(
-  'html',
-  ngExpressEngine({
-    bootstrap: AppServerModule,
-  }),
-);
 
 app.listen(port, () => console.log(`server running on port ${port}!`));
 
