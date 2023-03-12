@@ -3,7 +3,7 @@ import { Component, OnInit, ViewEncapsulation } from "@angular/core";
 @Component({
   selector: "sc-do-list",
   templateUrl: "./do-list.component.html",
-  styleUrls: ["./do-list.component.css"],
+  styleUrls: ["./do-list.component.scss"],
   encapsulation: ViewEncapsulation.Emulated
 })
 export class DoListComponent implements OnInit {

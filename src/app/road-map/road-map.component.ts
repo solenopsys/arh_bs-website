@@ -5,7 +5,7 @@ const STAGES_COUNT = 24;
 @Component({
   selector: "sc-road-map",
   templateUrl: "./road-map.component.html",
-  styleUrls: ["./road-map.component.css"],
+  styleUrls: ["./road-map.component.scss"],
   encapsulation: ViewEncapsulation.Emulated
 })
 export class RoadMapComponent implements OnInit {

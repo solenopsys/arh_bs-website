@@ -5,7 +5,7 @@ import {MenuItemData} from "@solenopsys/ui-navigate";
 @Component({
   selector: "sc-top-panel",
   templateUrl: "./top-panel.component.html",
-  styleUrls: ["./top-panel.component.css"],
+  styleUrls: ["./top-panel.component.scss"],
   encapsulation: ViewEncapsulation.Emulated
 })
 export class TopPanelComponent  {

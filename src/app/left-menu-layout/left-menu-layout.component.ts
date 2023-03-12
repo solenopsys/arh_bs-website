@@ -8,7 +8,7 @@ import {MenuItemData} from "@solenopsys/ui-navigate";
 @Component({
   selector: "sc-left-menu-layout",
   templateUrl: "./left-menu-layout.component.html",
-  styleUrls: ["./left-menu-layout.component.css"],
+  styleUrls: ["./left-menu-layout.component.scss"],
   encapsulation: ViewEncapsulation.Emulated
 })
 export class LeftMenuLayoutComponent {

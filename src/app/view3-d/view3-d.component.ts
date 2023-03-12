@@ -13,7 +13,7 @@ function animate() {
 @Component({
   selector: "sc-view3-d",
   templateUrl: "./view3-d.component.html",
-  styleUrls: ["./view3-d.component.css"],
+  styleUrls: ["./view3-d.component.scss"],
   encapsulation: ViewEncapsulation.Emulated
 })
 export class View3DComponent implements OnInit, AfterViewInit {
