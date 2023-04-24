@@ -2,7 +2,6 @@
   "name": "@solenopsys/fr-website",
   "version": "0.1.1",
   "dependencies": {
-    "three": "^0.147.0"
   },
   "scripts": {
     "test": "node index.js",

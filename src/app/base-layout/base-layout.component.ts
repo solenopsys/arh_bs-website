@@ -6,8 +6,6 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./base-layout.component.scss'],
   encapsulation: ViewEncapsulation.Emulated,
 })
-export class BaseLayoutComponent implements OnInit {
-  constructor() {}
+export class BaseLayoutComponent  {
 
-  ngOnInit(): void {}
 }

@@ -1,8 +1,7 @@
-import { Component, OnInit, ViewEncapsulation } from "@angular/core";
+import {Component, ViewEncapsulation} from "@angular/core";
 
-import { GroupService } from "@solenopsys/ui-publications";
-import { ActivatedRoute } from "@angular/router";
-import { firstValueFrom, map } from "rxjs";
+import {GroupService} from "@solenopsys/ui-publications";
+import {ActivatedRoute} from "@angular/router";
 import {MenuItemData} from "@solenopsys/ui-navigate";
 
 @Component({
@@ -18,7 +17,8 @@ export class LeftMenuLayoutComponent {
   menu: MenuItemData[];
 
   constructor(private conf: GroupService, private activatedroute: ActivatedRoute) {
-      let rootId = this.activatedroute.snapshot.data["rootId"];
+      const rootId = this.activatedroute.snapshot.data["rootId"];
+      console.log("rootId", rootId)
       this.conf.loadMenu(rootId).then(menu => {
         this.menu = menu;
       });
