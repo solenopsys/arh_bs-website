@@ -2,7 +2,7 @@ import {NgModule} from "@angular/core";
 import {BrowserModule} from "@angular/platform-browser";
 
 import {AppComponent} from "./app.component";
-import {RouterModule} from "@angular/router";
+import {ActivatedRouteSnapshot, CanActivateFn, RouterModule, UrlTree} from "@angular/router";
 import {CommonModule} from "@angular/common";
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
@@ -15,6 +15,15 @@ import {UINavigateModule} from "@solenopsys/ui-navigate";
 import {UIFormsModule} from "@solenopsys/ui-forms";
 import {MainPageComponent, RoadMapComponent, UITemplatesModule} from "@solenopsys/ui-templates";
 
+export function AllowedEntitiesGuard(allowedEntities: string[]): CanActivateFn {
+    return (route: ActivatedRouteSnapshot): boolean | UrlTree => {
+        const currentUrl = route.url;
+        if (currentUrl.toString().endsWith('/')) {
+            return true;
+        }
+        return false;
+    };
+}
 
 function createRoute(section: string, sectionId: string) {
     return {
@@ -69,3 +78,6 @@ function createRoute(section: string, sectionId: string) {
 })
 export class AppModule {
 }
+
+
+

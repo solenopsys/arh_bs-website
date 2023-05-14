@@ -2,6 +2,9 @@ import {environment} from "./environments/environment";
 import {enableProdMode, ViewEncapsulation} from "@angular/core";
 import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
 import {AppModule} from "./app/app.module";
+import {trailingSlash} from "@solenopsys/fl-globals";
+
+trailingSlash();
 
 if (environment.production) {
   enableProdMode();
