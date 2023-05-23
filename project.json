@@ -98,6 +98,9 @@
         "jestConfig": "packages/fronts/fr-website/jest.config.ts",
         "passWithNoTests": true
       }
+    },
+    "icons": {
+      "command": "node ./packages/scripts/icons.js  ./dist/fronts/fr-website"
     }
   },
   "tags": []

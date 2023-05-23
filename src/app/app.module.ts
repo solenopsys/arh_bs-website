@@ -11,9 +11,21 @@ import {createNgxs} from "@solenopsys/fl-storage";
 import {environment} from "../environments/environment";
 import {LeftMenuLayoutComponent} from "./left-menu-layout/left-menu-layout.component";
 import {BaseLayoutComponent} from "./base-layout/base-layout.component";
-import {UINavigateModule} from "@solenopsys/ui-navigate";
+import {MenuItemData, UINavigateModule} from "@solenopsys/ui-navigate";
 import {UIFormsModule} from "@solenopsys/ui-forms";
 import {MainPageComponent, RoadMapComponent, UITemplatesModule} from "@solenopsys/ui-templates";
+
+const menu: MenuItemData[] = [
+    {
+        name: "Documentation", link: "docs"
+    },
+    {
+        name: "Community", link: "community"
+    },
+    {
+        name: "Ecosystem", link: "ecosystem"
+    }
+];
 
 export function AllowedEntitiesGuard(allowedEntities: string[]): CanActivateFn {
     return (route: ActivatedRouteSnapshot): boolean | UrlTree => {
@@ -73,7 +85,10 @@ function createRoute(section: string, sectionId: string) {
         UIFormsModule,
         UITemplatesModule,
     ],
-    providers: [{provide: "assets_dir", useValue: ""}],
+    providers: [
+        {provide: "assets_dir", useValue: ""},
+        {provide: 'logo', useValue: "solenopsys"},
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule {
