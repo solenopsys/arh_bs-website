@@ -1,7 +1,7 @@
 import {enableProdMode} from '@angular/core';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 
-import {AppModule} from '@solenopsys/fl-website';
+import {WebSiteModule} from '@solenopsys/fl-website';
 import {environment} from './environments/environment';
 
 if (environment.production) {
@@ -9,5 +9,5 @@ if (environment.production) {
 }
 
 platformBrowserDynamic()
-    .bootstrapModule(AppModule)
+    .bootstrapModule(WebSiteModule)
     .catch((err) => console.error(err));
