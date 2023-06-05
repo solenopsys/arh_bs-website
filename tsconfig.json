@@ -1,16 +1,10 @@
 {
   "extends": "../../../tsconfig.base.json",
-  "files": [],
-  "include": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.spec.json"
-    }
-  ],
   "compilerOptions": {
+    "rootDir": "../",
+    "types": []
   },
-  "enableIvy":false,
+  "files": ["src/main.ts", "src/polyfills.ts"],
+  "include": ["src/**/*.d.ts"],
+  "exclude": [ "**/*.test.ts", "**/*.spec.ts"]
 }

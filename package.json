@@ -2,9 +2,13 @@
   "name": "@solenopsys/fr-website",
   "version": "0.1.1",
   "dependencies": {
-  },
-  "scripts": {
-    "test": "node index.js",
-    "build": "etsc"
+    "json5": "^2.2.3",
+    "@solenopsys/fl-website": "^0.1.0",
+    "@solenopsys/fl-globals": "^0.1.0",
+    "@solenopsys/fl-storage": "^0.1.0",
+    "@solenopsys/ui-forms": "^0.1.0",
+    "@solenopsys/ui-navigate": "^0.1.0",
+    "@solenopsys/ui-publications": "^0.1.0",
+    "@solenopsys/ui-templates": "^0.1.0"
   }
 }
