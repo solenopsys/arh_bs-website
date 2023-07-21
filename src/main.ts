@@ -1,5 +1,14 @@
-import {trailingSlash} from "@solenopsys/fl-globals";
+//import {trailingSlash} from "@solenopsys/fl-globals";
 
-trailingSlash()
+//trailingSlash()
 
-import('./bootstrap').catch((err) => console.error(err));
+
+
+
+import 'zone.js/dist/zone';
+import {platformBrowserDynamic} from "@angular/platform-browser-dynamic";
+
+import {WebSiteModule} from '@solenopsys/fl-website';
+platformBrowserDynamic()
+    .bootstrapModule(WebSiteModule)
+    .catch((err) => console.error(err));

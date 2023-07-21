@@ -1,14 +1,36 @@
 {
   "name": "@solenopsys/fr-website",
   "version": "0.1.1",
+  "type": "module",
+  "private": true,
+
+  "scripts": {
+    "dev": "vite --open",
+    "build": "vite build"
+  },
   "dependencies": {
+    "@angular/common": "^16.1.5",
+    "@angular/compiler": "^16.1.5",
+    "@angular/core": "^16.1.5",
+    "@angular/platform-browser": "^16.1.5",
+    "@angular/platform-browser-dynamic": "^16.1.5",
+    "@angular/router": "^16.1.5",
+    "@solenopsys/fl-globals": "workspace:^",
+    "@solenopsys/fl-storage": "workspace:^",
+    "@solenopsys/fl-website": "workspace:^",
+    "@solenopsys/ui-forms": "workspace:^",
+    "@solenopsys/ui-navigate": "workspace:^",
+    "@solenopsys/ui-publications": "workspace:^",
+    "@solenopsys/ui-templates": "workspace:^",
     "json5": "^2.2.3",
-    "@solenopsys/fl-website": "^0.1.0",
-    "@solenopsys/fl-globals": "^0.1.0",
-    "@solenopsys/fl-storage": "^0.1.0",
-    "@solenopsys/ui-forms": "^0.1.0",
-    "@solenopsys/ui-navigate": "^0.1.0",
-    "@solenopsys/ui-publications": "^0.1.0",
-    "@solenopsys/ui-templates": "^0.1.0"
+    "rxjs": "^7.8.1",
+    "zone.js": "^0.13.1"
+  },
+  "devDependencies": {
+    "@angular/compiler-cli": "^16.1.5",
+    "json-schema-to-typescript": "^13.0.2",
+    "sass": "^1.63.6",
+    "typescript": "5.1.6",
+    "vite": "^4.4.4"
   }
 }
