@@ -1,0 +1,45 @@
+{
+  "layout": {
+    "module": "@solenopsys/mf-layout",
+    "data": {
+      "logo": "/endpoints/solenopsys/fr-solenopsys/assets/logo.svg",
+      "favicon": "/endpoints/solenopsys/fr-solenopsys/assets/favicon.svg",
+      "title": "Solenopsys vc",
+      "navigate": {
+        "/docs": {
+          "title": "Documentation"
+        },
+        "/community": {
+          "title": "Community"
+        },
+        "/ecosystem": {
+          "title": "Ecosystem"
+        }
+      }
+    }
+  },
+  "routes": {
+    "/": {
+      "module": "@solenopsys/mf-landing",
+      "data": {}
+    },
+    "/docs": {
+      "module": "@solenopsys/mf-content",
+      "data": {
+        "ipfs": "bafyreiex6h53h3dckkozu44xfdq2g3ez7yt5ojrxfvhagke6yg7co6c7fe"
+      }
+    },
+    "/community": {
+      "module": "@solenopsys/mf-content",
+      "data": {
+        "ipfs": "bafyreig7p5xff3j32i6wzmconoyeggmrbbmi75ab74coepe6ji5m6svw5e"
+      }
+    },
+    "/ecosystem": {
+      "module": "@solenopsys/mf-content",
+      "data": {
+        "ipfs": "bafyreiakcsqjgpxzevinxdfjrtgdhcaaw4xtax7u7cc7txnnjdbtxhezbi"
+      }
+    }
+  }
+}
