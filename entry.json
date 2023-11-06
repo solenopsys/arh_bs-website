@@ -2,8 +2,8 @@
   "layout": {
     "module": "@solenopsys/mf-layout",
     "data": {
-      "logo": "/endpoints/solenopsys/fr-website/assets/logo.svg",
-      "favicon": "/endpoints/solenopsys/fr-website/assets/favicon.svg",
+      "logo": "/assets/logo.svg",
+      "favicon": "/assets/favicon.svg",
       "title": "Solenopsys vc",
       "navigate": {
         "/docs": {
@@ -14,15 +14,6 @@
         },
         "/ecosystem": {
           "title": "Ecosystem"
-        },
-        "/content": {
-          "title": "Content"
-        },
-        "/electronic": {
-          "title": "Electronic"
-        },
-        "/code": {
-          "title": "Code"
         }
       }
     }
@@ -48,22 +39,6 @@
       "module": "@solenopsys/mf-content",
       "data": {
         "ipfs": "bafyreiakcsqjgpxzevinxdfjrtgdhcaaw4xtax7u7cc7txnnjdbtxhezbi"
-      }
-    },
-    "/content": {
-      "module": "@solenopsys/mf-editor-content",
-      "data": {
-      }
-    },
-    "/code": {
-      "module": "@solenopsys/mf-editor-code",
-      "data": {
-        "url": "/endpoints/solenopsys/fr-website/assets/example.js"
-      }
-    },
-    "/electronic": {
-      "module": "@solenopsys/mf-editor-electronic",
-      "data": {
       }
     }
   }
